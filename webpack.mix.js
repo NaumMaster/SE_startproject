@@ -17,12 +17,14 @@ mix.options({
 });
 
 mix.browserSync({
-  proxy: "localhost:8000",
-  open: false,
-  notify: false,
-  files: ["www/content/**/*.html"],
+  //  proxy: "localhost:8000",
+  server: {
+    baseDir: "./www/content",
+    index: "home.htm",
+  },
+  files: ["./www/content/*.htm", "./www/content/skin/**/*.css"],
 });
 
-mix.copyDirectory("dev_src/static", "www/content/skin")
-mix.js('dev_src/js/main.js', 'js')
-mix.sass('dev_src/styles/main.scss', 'css')
+mix.copyDirectory("dev_src/icons", "www/content/skin/css");
+mix.js("dev_src/scripts/main.js", "www/content/skin");
+mix.sass("dev_src/styles/kakaha.scss", "www/content/skin/css");
