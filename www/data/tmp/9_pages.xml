@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages>
+	<page name="home">
+		<title>Главная</title>
+		<mainlevel>1</mainlevel>
+		<skin>default</skin>
+		<groupsname></groupsname>
+		<groupslevel>0</groupslevel>
+		<indexes>1</indexes>
+		<priority>5</priority>
+		<level>1</level>
+	</page>
+</pages>

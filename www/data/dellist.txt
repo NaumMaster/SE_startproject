@@ -1,0 +1,6 @@
+pages\about.xml
+pages\guestbook.xml
+pages\contact.xml
+pages\maps.xml
+pages\search.xml
+pages\registration.xml

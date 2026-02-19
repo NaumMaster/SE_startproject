@@ -1,0 +1,27 @@
+Модули
+	Новости
+		Новости [.cont_news]
+			Заголовок [.cont_news .contentTitle]
+				Текст заголовка [.cont_news .contentTitleTxt]
+			Рисунок раздела [.cont_news .contentImage]
+			Текст раздела [.cont_news .contentText]
+			Записи [.cont_news .object]
+				Заголовок записи [.cont_news .objectTitle]
+					Поле Дата [.cont_news #dataType_date]
+					Текст заголовка [.cont_news .objectTitleTxt]
+				Изображение записи [.cont_news .objectImage]
+				Краткий текст [.cont_news .objectNote]
+				Просмотр [.cont_news #view]
+					Блок изображения [.cont_news #view .objimage]{margin-bottom:10px;}
+						Изображение [.cont_news #view .objectImage]
+					Краткий текст [.cont_news #view .objectNote]
+					Подробный текст [.cont_news #view .objectText]
+					Кнопка "Вернуться назад" [.cont_news .buttonSend]{margin-top:20px;}
+				Ссылка "Далее" [.cont_news .newslink]{margin-top:5px; display:block;}
+			Ссылка "Архив" [.cont_news #linkArchive]{margin-top:20px; display:block; clear:both;}
+			Архив [#arh_news]
+				Заголовок [#arh_news .contentTitle]
+					Текст заголовка [#arh_news .contentTitleTxt]
+				Строка "Заголовок окъекта" [#arh_news .arhivTitle]{margin-bottom:3px;}
+				Ссылка [#arh_news #links]
+				Кнопка "Вернуться назад" [#arh_news .buttonSend]{margin-top:20px;}

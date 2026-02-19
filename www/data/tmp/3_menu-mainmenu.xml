@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+	<item name="home">
+		<visible>1</visible>
+		<name>home</name>
+		<title>Главная</title>
+		<url>/home</url>
+		<image></image>
+		<imageactive></imageactive>
+		<imagehover></imagehover>
+	</item>
+	<item name="about">
+		<visible>1</visible>
+		<name>about</name>
+		<title>О компании</title>
+		<url>/about</url>
+		<image></image>
+		<imageactive></imageactive>
+		<imagehover></imagehover>
+	</item>
+	<item name="guestbook">
+		<visible>1</visible>
+		<name>guestbook</name>
+		<title>Гостевая книга</title>
+		<url>/guestbook</url>
+		<image></image>
+		<imageactive></imageactive>
+		<imagehover></imagehover>
+	</item>
+	<item name="contact">
+		<visible>1</visible>
+		<name>contact</name>
+		<title>Контакты</title>
+		<url>/contact</url>
+		<image></image>
+		<imageactive></imageactive>
+		<imagehover></imagehover>
+	</item>
+	<item name="maps">
+		<visible>1</visible>
+		<name>maps</name>
+		<title>Карта сайта</title>
+		<url>/maps</url>
+		<image></image>
+		<imageactive></imageactive>
+		<imagehover></imagehover>
+	</item>
+</menu>
