@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /files
+Disallow: /order
+Disallow: /skin
+Disallow: /system
+
