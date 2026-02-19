@@ -4,4 +4,7 @@
 @use 'utils';
 @use 'globals';
 
-
+body {
+    display: flex;
+    background-color: #555;
+}

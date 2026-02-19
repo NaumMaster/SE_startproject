@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "rm -rf www/content/skin/css/* && npx mix watch --hot",
-    "build": "rm -rf www/content/skin/css/* && npx mix --production"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rm -rf www/content/skin/css/* && rm -rf www/content/skin/js/* && rm -rf www/content/skin/icons/* && npx mix watch",
+    "build": "rm -rf www/content/skin/css/* && rm -rf www/content/skin/js/* && rm -rf www/content/skin/icons/* && npx mix --production"
+
+
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
     "browser-sync": "^3.0.4",
     "browser-sync-webpack-plugin": "^2.4.0",
     "laravel-mix": "^6.0.49",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-sort-media-queries": "^5.2.0",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.97.3",
