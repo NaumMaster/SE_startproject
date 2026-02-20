@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-watch": "sass --watch ."
+    "build:dev": "webpack --env mode=development",
+    "build:prod": "webpack --env mode=production"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/NaumMaster/SE_startproject#readme",
   "devDependencies": {
-    "sass": "^1.97.3"
+    "sass": "^1.97.3",
+    "webpack": "^5.105.2",
+    "webpack-cli": "^6.0.1"
   }
 }
