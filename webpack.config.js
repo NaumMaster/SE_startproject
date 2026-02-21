@@ -29,9 +29,9 @@ module.exports = (env) => {
         },
         plugins: [
             !isDev &&
-                new webpack.ManifestPlugin({
-                    filename: "manifest.json",
-                }),
+            new webpack.ManifestPlugin({
+                filename: "manifest.json",
+            }),
             new webpack.ProgressPlugin(),
             new MiniCssExtractPlugin({
                 filename: "[name].[contenthash].css",
