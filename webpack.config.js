@@ -1,9 +1,12 @@
 const path = require("path");
 const webpack = require("webpack");
+
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const FileManagerPlugin = require("filemanager-webpack-plugin");
 const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
+
+const FileManagerPlugin = require("filemanager-webpack-plugin");
 
 module.exports = (env) => {
     const isDev = env.mode === "development";
@@ -41,6 +44,13 @@ module.exports = (env) => {
                                 "skin",
                                 "source"
                             ),
+                            path.resolve(
+                                __dirname,
+                                "www",
+                                "content",
+                                "skin",
+                                "images_opt"
+                            ),
                         ],
                     },
                     onEnd: {
@@ -53,6 +63,21 @@ module.exports = (env) => {
                                     "content",
                                     "skin",
                                     "source"
+                                ),
+                            },
+                            {
+                                source: path.resolve(
+                                    __dirname,
+                                    "www",
+                                    "content",
+                                    "images"
+                                ),
+                                destination: path.resolve(
+                                    __dirname,
+                                    "www",
+                                    "content",
+                                    "skin",
+                                    "images_opt"
                                 ),
                             },
                         ],
