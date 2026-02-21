@@ -7,6 +7,7 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 
 const FileManagerPlugin = require("filemanager-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = (env) => {
     const isDev = env.mode === "development";
@@ -48,8 +49,8 @@ module.exports = (env) => {
                                 __dirname,
                                 "www",
                                 "content",
-                                "skin",
-                                "images_opt"
+                                "images",
+                                "*.webp"
                             ),
                         ],
                     },
@@ -65,24 +66,22 @@ module.exports = (env) => {
                                     "source"
                                 ),
                             },
-                            {
-                                source: path.resolve(
-                                    __dirname,
-                                    "www",
-                                    "content",
-                                    "images"
-                                ),
-                                destination: path.resolve(
-                                    __dirname,
-                                    "www",
-                                    "content",
-                                    "skin",
-                                    "images_opt"
-                                ),
-                            },
                         ],
                     },
                 },
+            }),
+            new CopyPlugin({
+                patterns: [
+                    {
+                        from: path.resolve(
+                            __dirname,
+                            "www",
+                            "content",
+                            "images"
+                        ),
+                        to: path.resolve(__dirname, "www", "content", "images"),
+                    },
+                ],
             }),
         ],
         devServer: {
