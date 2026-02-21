@@ -1,0 +1,4 @@
+BODY(@,body,,,)
+	header(@,,,,[global-1])
+	Контент(@,main,,,[content-0])
+	footer(@,,,,[global-2])

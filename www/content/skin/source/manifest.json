@@ -2,7 +2,6 @@
   "entrypoints": {
     "main": {
       "imports": [
-        "main.css",
         "main.js"
       ]
     },
@@ -14,25 +13,14 @@
     }
   },
   "assets": {
-    "main.css": {
-      "file": "/main.bf47bbb02622ee362594.css"
-    },
     "main.js": {
-      "file": "/main.998a0d2070a2cd127617.js"
+      "file": "/main.6c2b91efcdc37f7c7a8d.js"
     },
     "global.css": {
-      "file": "/global.587c569b864c0a8079fe.css"
+      "file": "/global.0ec8365eff06606e6fc4.css"
     },
     "global.js": {
       "file": "/global.31d6cfe0d16ae931b73c.js"
-    },
-    "src/images/1.jpg": {
-      "file": "/1.jpg",
-      "src": "src/images/1.jpg"
-    },
-    "src/images/2.jpg": {
-      "file": "/2.jpg",
-      "src": "src/images/2.jpg"
     },
     "www/content/images/1.jpg": {
       "file": "/../../images/1.jpg",

@@ -1,5 +1,7 @@
 @use 'normalize';
-@use '../../fonts/fonts';
+@use '@/fonts';
 @use 'variables';
 @use 'utils';
 
+@use 'header';
+@use 'footer';

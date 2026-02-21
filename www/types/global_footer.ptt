@@ -1,0 +1,15 @@
+[var]
+thisear=2024
+count_goods=count_goods
+incompare=incompare
+[records]
+record.text1=text1
+record.text3=text3
+record.field=field
+record.title=title
+record.text2=text2
+record.image_prev=image_prev
+record.image_alt=image_alt
+record.note=note
+[thispage]
+thispage.name=name

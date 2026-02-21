@@ -17,15 +17,26 @@ module.exports = (env) => {
     return {
         mode: env.mode ?? "development",
         entry: {
-            main: path.resolve(__dirname, "src", "scripts", "main.js"),
-            // catalog: path.resolve(__dirname, "src", "scripts", "catalog.js"),
-            global: path.resolve(__dirname, "src", "scripts", "global.js"),
+            main: path.resolve(__dirname, "src", "templates", "main.js"),
+            // catalog: path.resolve(__dirname, "src", "templates", "catalog.js"),
+            global: path.resolve(__dirname, "src", "templates", "global.js"),
         },
         devtool: isDev ? "inline-source-map" : false,
         output: {
             filename: isDev ? "[name].js" : "[name].[contenthash].js",
             path: path.resolve(__dirname, "www", "content", "skin", "source"),
             assetModuleFilename: "[name][ext]",
+        },
+        resolve: {
+            alias: {
+                '@': path.resolve(__dirname, "src"),
+                '@fonts': path.resolve(__dirname, "src", "fonts"),
+                '@styles': path.resolve(__dirname, "src", "styles"),
+                '@globals': path.resolve(__dirname, "src", "styles", "globals"),
+                '@helpers': path.resolve(__dirname, "src", "styles", "helpers"),
+                '@sections': path.resolve(__dirname, "src", "styles", "sections"),
+                '@blocks': path.resolve(__dirname, "src", "styles", "blocks"),
+            },
         },
         plugins: [
             !isDev &&

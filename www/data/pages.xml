@@ -10,4 +10,14 @@
 		<priority>5</priority>
 		<level>1</level>
 	</page>
+	<page name="maps">
+		<title>Карта сайта</title>
+		<mainlevel>0</mainlevel>
+		<skin></skin>
+		<groupsname></groupsname>
+		<groupslevel>0</groupslevel>
+		<indexes>1</indexes>
+		<priority>5</priority>
+		<level>0</level>
+	</page>
 </pages>
