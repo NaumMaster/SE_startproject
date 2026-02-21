@@ -1,0 +1,58 @@
+{
+  "entrypoints": {
+    "main": {
+      "imports": [
+        "main.css",
+        "main.js"
+      ]
+    },
+    "global": {
+      "imports": [
+        "global.css",
+        "global.js"
+      ]
+    }
+  },
+  "assets": {
+    "main.css": {
+      "file": "/main.bf47bbb02622ee362594.css"
+    },
+    "main.js": {
+      "file": "/main.998a0d2070a2cd127617.js"
+    },
+    "global.css": {
+      "file": "/global.587c569b864c0a8079fe.css"
+    },
+    "global.js": {
+      "file": "/global.31d6cfe0d16ae931b73c.js"
+    },
+    "src/images/1.jpg": {
+      "file": "/1.jpg",
+      "src": "src/images/1.jpg"
+    },
+    "src/images/2.jpg": {
+      "file": "/2.jpg",
+      "src": "src/images/2.jpg"
+    },
+    "www/content/images/1.jpg": {
+      "file": "/../../images/1.jpg",
+      "src": "www/content/images/1.jpg"
+    },
+    "www/content/images/2.jpg": {
+      "file": "/../../images/2.jpg",
+      "src": "www/content/images/2.jpg"
+    },
+    "www/content/images/download (1).jpeg": {
+      "file": "/../../images/download (1).jpeg",
+      "src": "www/content/images/download (1).jpeg"
+    },
+    "www/content/images/download (2).jpeg": {
+      "file": "/../../images/download (2).jpeg",
+      "src": "www/content/images/download (2).jpeg"
+    },
+    "www/content/images/download.jpeg": {
+      "file": "/../../images/download.jpeg",
+      "src": "www/content/images/download.jpeg"
+    }
+  }
+}

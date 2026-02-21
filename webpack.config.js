@@ -9,6 +9,8 @@ const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
+const TerserPlugin = require("terser-webpack-plugin");
+
 module.exports = (env) => {
     const isDev = env.mode === "development";
 
@@ -17,7 +19,7 @@ module.exports = (env) => {
         entry: {
             main: path.resolve(__dirname, "src", "scripts", "main.js"),
             // catalog: path.resolve(__dirname, "src", "scripts", "catalog.js"),
-            // global: path.resolve(__dirname, "src", "scripts", "global.js"),
+            global: path.resolve(__dirname, "src", "scripts", "global.js"),
         },
         devtool: isDev ? "inline-source-map" : false,
         output: {
@@ -134,6 +136,7 @@ module.exports = (env) => {
             ],
         },
         optimization: {
+            minimize: true,
             minimizer: [
                 new ImageMinimizerPlugin({
                     minimizer: {
@@ -149,6 +152,7 @@ module.exports = (env) => {
                     },
                 }),
                 new ImageminWebpWebpackPlugin(),
+                new TerserPlugin(),
             ],
         },
     };
